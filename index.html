@@ -754,7 +754,188 @@ tr:last-child td{border-bottom:0}
     grid-template-columns:1fr
   }
 }
-</style>
+/* ================================
+   CEBAIR FINAL MOBILE + PC POLISH
+   ================================ */
+
+body{
+  overflow-x:hidden;
+}
+
+/* Better buttons */
+.btn{
+  transition:all .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+/* Better cards */
+.card,
+.verse,
+.heroCard{
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover,
+.verse:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(20,59,52,.08);
+}
+
+/* Mobile navigation */
+@media(max-width:800px){
+
+  .container{
+    width:min(100% - 32px,1160px);
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding-top:42px;
+    padding-bottom:40px;
+    gap:28px;
+  }
+
+  h1{
+    font-size:clamp(43px,12vw,58px);
+    line-height:.96;
+    letter-spacing:-.025em;
+    margin:14px 0 20px;
+  }
+
+  .lead{
+    font-size:17px;
+    line-height:1.7;
+  }
+
+  .heroCard{
+    padding:25px;
+    border-radius:22px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .section{
+    padding:48px 16px;
+  }
+
+  .sectionHead h2{
+    font-size:30px;
+  }
+
+  table{
+    display:block;
+    overflow-x:auto;
+    white-space:normal;
+  }
+
+  th,
+  td{
+    min-width:170px;
+  }
+}
+
+/* Small phones */
+@media(max-width:560px){
+
+  nav{
+    position:sticky;
+    top:0;
+  }
+
+  .nav{
+    padding:13px 16px;
+  }
+
+  .brand{
+    font-size:16px;
+  }
+
+  h1{
+    font-size:clamp(40px,11.5vw,54px);
+  }
+
+  h2{
+    font-size:29px;
+  }
+
+  .hero{
+    padding-top:35px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+    margin:6px 0;
+  }
+
+  .heroCard{
+    padding:23px;
+  }
+
+  .verse{
+    padding:20px;
+  }
+
+  .sanskrit{
+    font-size:18px;
+  }
+
+  .founder-showcase{
+    margin:25px 16px 0;
+    border-radius:22px;
+  }
+
+  .founder-copy{
+    padding:30px 24px;
+  }
+
+  .founder-copy h2{
+    font-size:32px;
+  }
+
+  .founder-photo{
+    min-height:380px;
+  }
+
+  .contact-section{
+    padding:0 16px;
+  }
+
+  .contact-box{
+    padding:22px;
+    border-radius:20px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Accessibility */
+a:focus-visible,
+button:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
+
+/* Prevent broken images from destroying layout */
+img{
+  max-width:100%;
+}
+
+img[alt]{
+  color:var(--muted);
+}
+
+/* Smooth sections */
+section{
+  scroll-margin-top:80px;
+}</style>
 </head>
 
 <body>
