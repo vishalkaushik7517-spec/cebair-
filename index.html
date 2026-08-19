@@ -3,49 +3,105 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CEBAIR | Evidence-Based Ayurveda & AI Research</title>
+<title>CEBAIR | Timira–01</title>
 <style>
-:root{--ink:#17352f;--muted:#60716d;--paper:#f7f8f4;--card:#fff;--line:#dfe7e1;--accent:#9a6b35}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
-nav{position:sticky;top:0;background:#f7f8f4ee;border-bottom:1px solid var(--line);z-index:5}.nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
-.brand{font-weight:800;letter-spacing:.08em}.brand b{color:var(--accent)}nav a{margin-left:18px;color:var(--ink);text-decoration:none;font-size:14px}
-.hero,section{max-width:1120px;margin:auto;padding:70px 22px}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center;padding-top:85px}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:13px;font-weight:700}h1{font-size:clamp(44px,6vw,72px);line-height:1.02;margin:15px 0}h2{font-size:34px;margin:5px 0 12px}.lead{font-size:20px;color:var(--muted)}
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;margin:7px 7px 0 0}.primary{background:var(--ink);color:#fff}.secondary{border:1px solid var(--line);color:var(--ink);background:#fff}
-.feature{background:var(--ink);color:#fff;border-radius:24px;padding:30px;box-shadow:0 18px 45px #17352f20}.feature small{color:#d9bd8f;text-transform:uppercase;letter-spacing:.12em}.feature h3{font-size:27px}
-.sectionhead{margin-bottom:28px}.sectionhead p,.card p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}.icon{font-size:28px}
-.mapping{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.row{display:grid;grid-template-columns:1.1fr 1fr .6fr;padding:15px 18px;border-bottom:1px solid var(--line)}.row:last-child{border:0}.head{font-weight:bold;background:#f0f4ef}.badge{background:#eef2ee;padding:4px 8px;border-radius:999px;font-size:12px}
-footer{text-align:center;border-top:1px solid var(--line);padding:28px;color:var(--muted)}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:50px}.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:4px}}
+:root{--ink:#17352f;--muted:#61706c;--paper:#f7f8f4;--card:#fff;--line:#dfe7e1;--accent:#9a6b35;--soft:#edf2ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+nav{position:sticky;top:0;background:#f7f8f4ee;border-bottom:1px solid var(--line);z-index:5}.nav{max-width:1120px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;letter-spacing:.08em}.brand b{color:var(--accent)}nav a{margin-left:18px;color:var(--ink);text-decoration:none;font-size:14px}
+.hero,section{max-width:1120px;margin:auto;padding:65px 22px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:75px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:12px;font-weight:800}h1{font-size:clamp(42px,6vw,70px);line-height:1.03;margin:15px 0}h2{font-size:34px;line-height:1.15;margin:7px 0 12px}h3{margin-bottom:7px}.lead{font-size:19px;color:var(--muted)}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;margin:8px 7px 0 0}.primary{background:var(--ink);color:#fff}.secondary{border:1px solid var(--line);color:var(--ink);background:#fff}
+.feature{background:var(--ink);color:#fff;border-radius:24px;padding:30px;box-shadow:0 18px 45px #17352f20}.feature small{color:#d9bd8f;text-transform:uppercase;letter-spacing:.12em}.feature h3{font-size:26px}
+.sectionhead{margin-bottom:25px}.sectionhead p,.card p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}.tag{display:inline-block;background:var(--soft);padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;margin:3px}
+.verse{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;margin:18px 0}.sanskrit{font-family:Georgia,serif;font-size:20px;line-height:1.9}.iast{color:var(--muted);font-style:italic}.meaning{border-left:3px solid var(--accent);padding-left:14px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden}th,td{text-align:left;padding:13px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--soft)}tr:last-child td{border-bottom:0}.note{background:#fff8ed;border:1px solid #ead9bd;border-radius:14px;padding:16px;margin:20px 0}.evidence{font-weight:800}.footer{text-align:center;border-top:1px solid var(--line);padding:30px;color:var(--muted)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:50px}.grid{grid-template-columns:1fr}table{font-size:14px}th,td{padding:10px}}
 </style>
 </head>
 <body>
 <nav><div class="nav"><div class="brand">CEBAIR<b>•</b></div><div><a href="#research">Research</a><a href="#timira">Timira</a><a href="#ai">AI</a></div></div></nav>
+
 <header class="hero">
-<div><div class="eyebrow">Centre for Evidence-Based Ayurveda & AI Research</div>
-<h1>Ancient knowledge.<br>Modern evidence.</h1>
-<p class="lead">A research platform connecting classical Ayurvedic texts with modern biomedical science, clinical research, pharmacy science and responsible artificial intelligence.</p>
-<a class="btn primary" href="#timira">Explore first project</a><a class="btn secondary" href="#research">Research areas</a></div>
-<div class="feature"><small>Flagship project</small><h3>Timira → Modern Ophthalmology Mapping</h3><p>Classical śloka → clinical phenotype → modern differential → published evidence → research gaps.</p><p><strong>Principle:</strong> correlation is a hypothesis until clinically validated.</p></div>
+<div><div class="eyebrow">CEBAIR Research Module 01</div>
+<h1>Timira<br>Phenotype Mapping</h1>
+<p class="lead">A source-critical framework connecting classical Ayurvedic descriptions of visual disturbance with modern ophthalmological phenotypes—without assuming one-to-one disease equivalence.</p>
+<a class="btn primary" href="#timira">Read Timira–01</a><a class="btn secondary" href="#methods">Methodology</a></div>
+<div class="feature"><small>Classical source</small><h3>Sushruta Saṃhitā</h3><p><strong>Uttara Tantra · Chapter 7</strong></p><p>Classical descriptions are presented first; modern correlations are labelled as phenotypes, differentials or hypotheses.</p></div>
 </header>
-<section id="research"><div class="sectionhead"><div class="eyebrow">Research ecosystem</div><h2>Seven connected research domains.</h2><p>Designed to make Ayurvedic research searchable, transparent and testable.</p></div>
+
+<section id="timira">
+<div class="sectionhead"><div class="eyebrow">Timira–01</div><h2>Classical visual phenomena</h2><p>Selected descriptions from the Timira discussion in Sushruta Saṃhitā, Uttara Tantra 7.</p></div>
+
+<div class="verse"><span class="tag">Uttara Tantra 7/11</span>
+<div class="sanskrit">ऊर्ध्वं पश्यति नाधस्तात्तृतीयं पटलं गते ।<br>महान्त्यपि च रूपाणि च्छादितानीव वाससा ॥</div>
+<p class="iast">ūrdhvaṃ paśyati nādhastāt tṛtīyaṃ paṭalaṃ gate | mahānty api ca rūpāṇi cchāditānīva vāsasā ||</p>
+<div class="meaning"><strong>Meaning:</strong> The passage describes altered visual perception in relation to direction and an obscured or covered appearance of forms.</div>
+<p><strong>Modern phenotype:</strong> reduced visual clarity / visual obscuration.</p>
+<p><strong>Evidence status:</strong> <span class="evidence">Phenotypic correspondence — not a diagnosis.</span></p>
+</div>
+
+<div class="verse"><span class="tag">Uttara Tantra 7/12</span>
+<div class="sanskrit">कर्णनासाक्षियुक्तानि विपरीतानि वीक्षते ।<br>यथादोषं च रज्येत दृष्टिर्दोषे बलीयसि ॥</div>
+<p class="iast">karṇa-nāsākṣi-yuktāni viparītāni vīkṣate | yathādoṣaṃ ca rajyeta dṛṣṭir doṣe balīyasi ||</p>
+<div class="meaning"><strong>Meaning:</strong> The text describes altered or abnormal perception and increasing visual disturbance with stronger doṣic involvement.</div>
+<p><strong>Modern phenotype:</strong> visual distortion or altered perception; differential diagnosis is broad.</p>
+<p><strong>Evidence status:</strong> <span class="evidence">Exploratory.</span></p>
+</div>
+
+<div class="verse"><span class="tag">Uttara Tantra 7/13</span>
+<div class="sanskrit">अधःस्थिते समीपस्थं दूरस्थं चोपरिस्थिते ।<br>पार्श्वस्थिते तथा दोषे पार्श्वस्थानि न पश्यति ॥</div>
+<p class="iast">adhaḥsthite samīpasthaṃ dūrasthaṃ coparisthite | pārśvasthite tathā doṣe pārśvasthāni na paśyati ||</p>
+<div class="meaning"><strong>Meaning:</strong> The described disturbance varies with the location of the defect, including inability to perceive objects in particular spatial regions.</div>
+<p><strong>Modern phenotype:</strong> possible visual-field disturbance; requires ophthalmic and neurological assessment.</p>
+<p><strong>Evidence status:</strong> <span class="evidence">Potential phenotype correspondence.</span></p>
+</div>
+
+<div class="verse"><span class="tag">Uttara Tantra 7/14</span>
+<div class="sanskrit">समन्ततः स्थिते दोषे सङ्कुलानीव पश्यति ।<br>दृष्टिमध्यगते दोषे स एकं मन्यते द्विधा ॥</div>
+<p class="iast">samantataḥ sthite doṣe saṅkulānīva paśyati | dṛṣṭimadhyagate doṣe sa ekaṃ manyate dvidhā ||</p>
+<div class="meaning"><strong>Meaning:</strong> With the described central visual disturbance, the person perceives one object as two.</div>
+<p><strong>Modern phenotype:</strong> diplopia-like symptom. Modern assessment should distinguish monocular from binocular diplopia and investigate its cause.</p>
+<p><strong>Evidence status:</strong> <span class="evidence">Strong symptom-level correspondence.</span></p>
+</div>
+
+<div class="verse"><span class="tag">Uttara Tantra 7/15</span>
+<div class="sanskrit">द्विधास्थिते त्रिधा पश्येद्बहुधा चानवस्थिते ।<br>तिमिराख्यः स वै दोषः ... चतुर्थं पटलं गतः ॥</div>
+<p class="iast">dvidhāsthite tridhā paśyed bahudhā cānavasthite | timirākhyaḥ sa vai doṣaḥ ... caturthaṃ paṭalaṃ gataḥ ||</p>
+<div class="meaning"><strong>Meaning:</strong> The passage describes perception of three or multiple forms in the stated circumstances and relates the condition to the fourth paṭala.</div>
+<p><strong>Modern phenotype:</strong> polyopia-like or multiple-image visual phenomenon.</p>
+<p><strong>Evidence status:</strong> <span class="evidence">Symptom-level correspondence.</span></p>
+</div>
+
+<div class="note"><strong>CEBAIR source-critical note:</strong> Sanskrit text, traditional interpretation and modern clinical correlation are deliberately separated. “Timira = myopia,” “Timira = cataract,” or “Timira = diplopia” should not be stated as established equivalences without appropriate clinical evidence.</div>
+</section>
+
+<section id="methods">
+<div class="sectionhead"><div class="eyebrow">Research method</div><h2>Classical text → phenotype → measurement → evidence</h2></div>
 <div class="grid">
-<div class="card"><div class="icon">📜</div><h3>Samhita Explorer</h3><p>Śloka, exact reference, transliteration, meaning and clinical interpretation.</p></div>
-<div class="card"><div class="icon">🔬</div><h3>Evidence-Based Ayurveda</h3><p>Clinical trials, reviews, safety evidence and formulation research.</p></div>
-<div class="card"><div class="icon">🧬</div><h3>Ayurveda × Modern Medicine</h3><p>Structured, cautious mappings between classical features and modern diagnoses.</p></div>
-<div class="card"><div class="icon">🤖</div><h3>AI + Ayurveda</h3><p>Literature mining, NLP, research questions and clinical-data analysis.</p></div>
-<div class="card"><div class="icon">💊</div><h3>Pharmacy Research</h3><p>Quality control, formulation science, pharmacovigilance and interactions.</p></div>
-<div class="card"><div class="icon">🏥</div><h3>Clinical Research</h3><p>Case databases, outcomes, protocols and reproducible study design.</p></div>
-</div></section>
-<section id="timira"><div class="sectionhead"><div class="eyebrow">Flagship research</div><h2>Timira–Ophthalmology Mapping</h2><p>We map clinical features rather than forcing one-to-one disease equivalence.</p></div>
-<div class="mapping">
-<div class="row head"><div>Classical feature</div><div>Possible modern correlate</div><div>Evidence</div></div>
-<div class="row"><div>Avyakta darśana</div><div>Blurred vision / refractive error</div><div><span class="badge">Moderate</span></div></div>
-<div class="row"><div>Distant objects unclear</div><div>Myopia phenotype</div><div><span class="badge">Stronger</span></div></div>
-<div class="row"><div>Hazy/cloudy perception</div><div>Refractive, media or retinal causes</div><div><span class="badge">Nonspecific</span></div></div>
-<div class="row"><div>Double/treble visual phenomena</div><div>Diplopia/polyopia-like phenomenon</div><div><span class="badge">Symptom-level</span></div></div>
-</div></section>
-<section id="ai"><div class="sectionhead"><div class="eyebrow">Responsible AI</div><h2>AI as a research assistant.</h2><p>Human clinical judgment, source verification and patient privacy remain central.</p></div>
-<div class="grid"><div class="card"><h3>Literature AI</h3><p>Retrieve, summarize and compare evidence with traceable sources.</p></div><div class="card"><h3>Samhita NLP</h3><p>Extract diseases, symptoms, formulations and verse references from digitized texts.</p></div><div class="card"><h3>Clinical Research AI</h3><p>Assist with data cleaning, phenotyping and statistical workflows—not autonomous diagnosis.</p></div></div></section>
-<footer><strong>CEBAIR</strong> — Centre for Evidence-Based Ayurveda & AI Research<br>Free website prototype</footer>
+<div class="card"><h3>01 · Classical source</h3><p>Record text, chapter, verse, Sanskrit and transliteration.</p></div>
+<div class="card"><h3>02 · Phenotype</h3><p>Convert the clinical description into a clearly defined observable symptom.</p></div>
+<div class="card"><h3>03 · Modern differential</h3><p>List plausible ophthalmological explanations rather than forcing a single diagnosis.</p></div>
+<div class="card"><h3>04 · Measurement</h3><p>Identify tests such as visual acuity, refraction, slit-lamp examination, fundus examination or perimetry where appropriate.</p></div>
+<div class="card"><h3>05 · Evidence grading</h3><p>A: direct validation · B: strong correspondence · C: plausible correlation · D: hypothesis.</p></div>
+<div class="card"><h3>06 · Research gap</h3><p>Turn the classical observation into a testable clinical research question.</p></div>
+</div>
+</section>
+
+<section>
+<div class="sectionhead"><div class="eyebrow">Phenotype matrix</div><h2>Timira → modern clinical investigation</h2></div>
+<table>
+<tr><th>Classical description</th><th>Modern phenotype</th><th>Possible investigation</th></tr>
+<tr><td>Obscured / indistinct appearance</td><td>Blurred or reduced visual clarity</td><td>Visual acuity + refraction; ocular examination</td></tr>
+<tr><td>Distorted perception</td><td>Visual distortion / metamorphopsia-like symptom</td><td>Ophthalmic examination; retinal assessment where indicated</td></tr>
+<tr><td>Spatially restricted perception</td><td>Visual-field abnormality</td><td>Confrontation field / automated perimetry</td></tr>
+<tr><td>One object perceived as two</td><td>Diplopia-like symptom</td><td>Monocular vs binocular diplopia assessment</td></tr>
+<tr><td>Three or multiple images</td><td>Polyopia-like phenomenon</td><td>Detailed ocular and neurological assessment</td></tr>
+</table>
+</section>
+
+<section id="ai">
+<div class="sectionhead"><div class="eyebrow">AI + Ayurveda</div><h2>From text mining to testable research</h2><p>AI can assist literature retrieval, Sanskrit terminology extraction, phenotype normalization and research-gap discovery. Clinical diagnosis and final interpretation remain human responsibilities.</p></div>
+<div class="card"><h3>Example research question</h3><p><strong>Can the classical description of “one object perceived as two” be systematically characterized using modern monocular/binocular diplopia testing?</strong></p></div>
+</section>
+
+<footer class="footer"><strong>CEBAIR</strong> — Centre for Evidence-Based Ayurveda & AI Research<br>Timira–01 · Classical Evidence & Modern Phenotype Mapping</footer>
 </body></html>
